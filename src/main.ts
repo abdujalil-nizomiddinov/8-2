@@ -1,4 +1,3 @@
-// src/main.ts
 const form = document.getElementById("boxForm") as HTMLFormElement;
 const output = document.getElementById("output") as HTMLDivElement;
 const clearBtn = document.getElementById("clearBtn") as HTMLButtonElement;

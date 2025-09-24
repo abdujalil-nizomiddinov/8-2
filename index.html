@@ -6,22 +6,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Create box with TS</title>
   </head>
-  <body class="min-h-screen bg-white flex flex-col items-center justify-start p-6 max-w-7xl mx-auto pb-[220px]">
-    
+  <body
+    class="min-h-screen bg-white flex flex-col items-center justify-start p-6 max-w-7xl mx-auto pr-[375px]"
+  >
     <form
       id="boxForm"
-      class="fixed bottom-0 left-0 w-full bg-lime-200 shadow-2xl border-t-4 border-lime-400 z-50 flex flex-col"
+      class="fixed bottom-0 right-0 w-full max-w-[245px] h-full bg-lime-200 shadow-2xl border-t-4 border-lime-400 z-50 flex flex-col"
     >
-      <div class="sticky top-0 bg-lime-300 text-center py-2 border-b border-lime-500">
+      <div
+        class="sticky top-0 bg-lime-300 text-center py-2 border-b border-lime-500"
+      >
         <h1 class="text-xl font-bold text-black uppercase tracking-wide">
           Box Generator
         </h1>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 overflow-y-auto max-h-[140px]">
+      <div
+        class="grid grid-cols-1 gap-4 p-4 overflow-y-auto h-full"
+      >
         <label class="flex flex-col text-black font-semibold">
           Shape:
-          <select id="shape" name="shape" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="shape"
+            name="shape"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="square">To'rtburchak</option>
             <option value="circle">Yumaloq</option>
           </select>
@@ -29,19 +38,33 @@
 
         <label class="flex flex-col text-black font-semibold">
           Width (px):
-          <input type="number" id="boxWidth" name="boxWidth" placeholder="masalan: 100"
-            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400" />
+          <input
+            type="number"
+            id="boxWidth"
+            name="boxWidth"
+            placeholder="masalan: 100"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          />
         </label>
 
         <label class="flex flex-col text-black font-semibold">
           Height (px):
-          <input type="number" id="boxHeight" name="boxHeight" placeholder="masalan: 100"
-            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400" />
+          <input
+            type="number"
+            id="boxHeight"
+            name="boxHeight"
+            placeholder="masalan: 100"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          />
         </label>
 
         <label class="flex flex-col text-black font-semibold">
           Border px:
-          <select id="borderPx" name="borderPx" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="borderPx"
+            name="borderPx"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="0" selected>none (0px)</option>
             <option value="1">1px</option>
             <option value="2">2px</option>
@@ -52,7 +75,11 @@
 
         <label class="flex flex-col text-black font-semibold">
           Border type:
-          <select id="borderType" name="borderType" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="borderType"
+            name="borderType"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="none" selected>none</option>
             <option value="solid">solid</option>
             <option value="dashed">dashed</option>
@@ -62,7 +89,11 @@
 
         <label class="flex flex-col text-black font-semibold">
           Border color:
-          <select id="borderColor" name="borderColor" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="borderColor"
+            name="borderColor"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="transparent" selected>none (transparent)</option>
             <option value="black">black</option>
             <option value="red">red</option>
@@ -72,7 +103,11 @@
 
         <label class="flex flex-col text-black font-semibold">
           Background color:
-          <select id="bgColor" name="bgColor" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="bgColor"
+            name="bgColor"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="transparent" selected>none (transparent)</option>
             <option value="white">white</option>
             <option value="black">black</option>
@@ -82,7 +117,11 @@
 
         <label class="flex flex-col text-black font-semibold">
           Cursor:
-          <select id="cursorType" name="cursorType" class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400">
+          <select
+            id="cursorType"
+            name="cursorType"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          >
             <option value="default">default</option>
             <option value="pointer">pointer</option>
             <option value="crosshair">crosshair</option>
@@ -94,12 +133,19 @@
 
         <label class="flex flex-col text-black font-semibold">
           Box count:
-          <input type="number" id="boxCount" name="boxCount" placeholder="nechta chiqsin"
-            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400" />
+          <input
+            type="number"
+            id="boxCount"
+            name="boxCount"
+            placeholder="nechta chiqsin"
+            class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
+          />
         </label>
       </div>
 
-      <div class="flex justify-center gap-4 py-3 border-t border-lime-400 bg-lime-300">
+      <div
+        class="flex justify-center gap-4 py-3 border-t border-lime-400 bg-lime-300"
+      >
         <button
           type="submit"
           class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-lg shadow-md transition"
@@ -118,8 +164,11 @@
 
     <div id="output" class="flex flex-wrap justify-center mt-6 gap-4"></div>
 
-    <footer class="text-center mt-10 p-4 text-gray-700 font-mono tracking-[4px] uppercase">
-      Created by <span class="font-bold lowercase tracking-normal">Abu developer</span> ©
+    <footer
+      class="text-center mt-10 p-4 text-gray-700 font-mono tracking-[4px] uppercase"
+    >
+      Created by
+      <span class="font-bold lowercase tracking-normal">Abu developer</span> ©
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
