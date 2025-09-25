@@ -17,55 +17,49 @@
         class="sticky top-0 bg-lime-300 text-center py-2 border-b border-lime-500"
       >
         <h1 class="text-xl font-bold text-black uppercase tracking-wide">
-          Box Generator
+          Box Creatore
         </h1>
       </div>
 
-      <div
-        class="grid grid-cols-1 gap-4 p-4 overflow-y-auto h-full"
-      >
+      <div class="grid grid-cols-1 gap-4 p-4 overflow-y-auto h-full">
         <label class="flex flex-col text-black font-semibold">
-          Shape:
+          Shape
           <select
             id="shape"
-            name="shape"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="square">To'rtburchak</option>
-            <option value="circle">Yumaloq</option>
+            <option value="square">tortburchak</option>
+            <option value="circle">yumaloq</option>
           </select>
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Width (px):
+          Width px
           <input
             type="number"
             id="boxWidth"
-            name="boxWidth"
-            placeholder="masalan: 100"
+            placeholder="defaulte - 100"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           />
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Height (px):
+          Height px
           <input
             type="number"
             id="boxHeight"
-            name="boxHeight"
-            placeholder="masalan: 100"
+            placeholder="defaulte - 100"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           />
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Border px:
+          Border px
           <select
             id="borderPx"
-            name="borderPx"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="0" selected>none (0px)</option>
+            <option value="0" selected>(0px)</option>
             <option value="1">1px</option>
             <option value="2">2px</option>
             <option value="4">4px</option>
@@ -74,27 +68,24 @@
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Border type:
+          Border type
           <select
             id="borderType"
-            name="borderType"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="none" selected>none</option>
             <option value="solid">solid</option>
-            <option value="dashed">dashed</option>
+            <option value="dashed" selected>dashed</option>
             <option value="dotted">dotted</option>
           </select>
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Border color:
+          Border color
           <select
             id="borderColor"
-            name="borderColor"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="transparent" selected>none (transparent)</option>
+            <option value="transparent" selected>transparent</option>
             <option value="black">black</option>
             <option value="red">red</option>
             <option value="blue">blue</option>
@@ -102,13 +93,12 @@
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Background color:
+          Background color
           <select
             id="bgColor"
-            name="bgColor"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="transparent" selected>none (transparent)</option>
+            <option value="transparent" selected>transparent</option>
             <option value="white">white</option>
             <option value="black">black</option>
             <option value="yellow">yellow</option>
@@ -116,13 +106,12 @@
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Cursor:
+          Cursor
           <select
             id="cursorType"
-            name="cursorType"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           >
-            <option value="default">default</option>
+            <option value="default">defaulte</option>
             <option value="pointer">pointer</option>
             <option value="crosshair">crosshair</option>
             <option value="move">move</option>
@@ -132,11 +121,10 @@
         </label>
 
         <label class="flex flex-col text-black font-semibold">
-          Box count:
+          Box count
           <input
             type="number"
             id="boxCount"
-            name="boxCount"
             placeholder="nechta chiqsin"
             class="rounded-lg p-2 border border-lime-400 focus:ring-2 focus:ring-yellow-400"
           />
